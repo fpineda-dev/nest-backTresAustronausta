@@ -7,7 +7,7 @@
 
 1. Clonar el repositorio
 ```
-https://gitclone
+git clone https://github.com/fpineda-dev/nest-backTresAustronausta.git
 ```
 2. Ejecutar
 ```
