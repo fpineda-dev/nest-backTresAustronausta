@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { ApiProperty } from '@nestjs/swagger';
 import { IsEmail, IsString, MinLength } from 'class-validator';
 
@@ -23,7 +24,6 @@ export class CreateUserDto {
     description: 'the password of user',
   })
   @MinLength(1)
-  password: string;
-  @MinLength(1)
+  password: string;  
   token: string;
 }

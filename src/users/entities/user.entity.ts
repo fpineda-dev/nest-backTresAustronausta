@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { ApiProperty } from '@nestjs/swagger';
 import { Document } from 'mongoose';
@@ -36,10 +37,7 @@ export class User extends Document {
     index: true,
   })
   password: string;
-  @Prop({
-    unique: true,
-    index: true,
-  })
+  
   token: string;
 }
 

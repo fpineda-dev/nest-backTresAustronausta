@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { ApiProperty } from '@nestjs/swagger';
 import { Document } from 'mongoose';
@@ -19,10 +20,7 @@ export class Product extends Document {
     example: 0,
     description: 'Product Price',
   })
-  @Prop({
-    unique: true,
-    index: true,
-  })
+  
   price: number;
 
   @Prop({
